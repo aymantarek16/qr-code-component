@@ -21,29 +21,14 @@ a {
 }
 
 /* =========================================== App Styling =========================================== */
-.attribution {
-  position: absolute;
-  bottom: 15%;
-  right: 50%;
-  transform: translateX(50%);
-  margin: 0 auto;
-  display: block;
-  font-size: 12px;
-}
-@media screen and (max-width: 1200px) {
-  .attribution {
-    display: none;
-  }
-}
-
-.qr {
+.qr_container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.qr .qr_container {
+.qr_container .qr_card {
   width: 300px;
   height: 500px;
   background: white;
@@ -56,25 +41,25 @@ a {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.qr .qr_container img {
+.qr_container .qr_card img {
   width: 270px;
   height: 270px;
   border-radius: 10px;
 }
 
-.qr .qr_container .qr_content {
+.qr_container .qr_card .qr_content {
   margin-top: 30px;
   text-align: center;
 }
 
-.qr .qr_container .qr_content h1 {
+.qr_container .qr_card .qr_content h1 {
   font-size: 20px;
   margin-bottom: 15px;
   color: hsl(218, 44%, 22%);
   font-weight: bold;
 }
 
-.qr .qr_container .qr_content p {
+.qr_container .qr_card .qr_content p {
   font-size: 15px;
   color: hsl(220, 15%, 55%);
   font-weight: 500;
