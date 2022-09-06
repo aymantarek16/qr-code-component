@@ -1,0 +1,83 @@
+/* =========================================== Font Family =========================================== */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* =========================================== Global Reset =========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: hsl(212, 45%, 89%);
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: royalblue;
+  font-size: 14px;
+}
+
+/* =========================================== App Styling =========================================== */
+.attribution {
+  position: absolute;
+  bottom: 15%;
+  right: 50%;
+  transform: translateX(50%);
+  margin: 0 auto;
+  display: block;
+  font-size: 12px;
+}
+@media screen and (max-width: 1200px) {
+  .attribution {
+    display: none;
+  }
+}
+
+.qr {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr .qr_container {
+  width: 300px;
+  height: 500px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.qr .qr_container img {
+  width: 270px;
+  height: 270px;
+  border-radius: 10px;
+}
+
+.qr .qr_container .qr_content {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.qr .qr_container .qr_content h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: hsl(218, 44%, 22%);
+  font-weight: bold;
+}
+
+.qr .qr_container .qr_content p {
+  font-size: 15px;
+  color: hsl(220, 15%, 55%);
+  font-weight: 500;
+  font-weight: bold;
+}
+/* =========================================== End Project =========================================== */
